@@ -51,6 +51,7 @@
     <main class="container-fluid">
       <div class="row">
 
+        <!-- SIDEBAR -->
         <section class="side-bar col-1 col-lg-2 text-white d-flex flex-column justify-content-between align-items-center py-2">
 
           <ul class="list-unstyled">
@@ -70,8 +71,8 @@
         <section class="container-fluid main-part col-10 p-0">
 
           <div class="row">
-
-          <div class="container-fluid bg-primary  text-white row p-3">
+    <!-- top-part -->
+          <div class="container-fluid bg-primary text-white row p-3">
             <div class="col-12 col-md-8">
               <div>Boolean <button type="button" class="btn btn-primary badge badge-pill m-2">Piano blaze</button></div>
               <div>
@@ -88,15 +89,114 @@
               </div>
             </div>
 
-            <div class="col-12 col-md-4 pt-2">
-              <p>Studenti online negli ultimi 30 minuti</p>
+            <div class="col-12 col-md-4">
+              <div>Studenti online negli ultimi 30 minuti</div>
               <div>125</div>
             </div>         
           </div>
 
-          <div class="col-12 col-md-8 left-part">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate autem ipsa ad unde, error, dolorum amet aut, enim dolores corporis illum. Alias quas error delectus eius molestiae et nesciunt aperiam.</div>
+    <!-- left-part -->
+          <div class="col-12 col-lg-8 left-part ">
+        <!-- TABELLA -->
+            <div>
+              <nav class="navbar bg-light mt-3">
+                <div class="container-fluid mt-">
+                  <a class="navbar-brand">Prossime classi</a>
+                  <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">+</button>
+      
+                  <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                    <div class="offcanvas-header">
+                      <h5 class="offcanvas-title" id="offcanvasRightLabel">Offcanvas right</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                      ...
+                    </div>
+                  </div>
+                </div>
+              </nav>
 
-          <div class="col-12 col-md-4 right-part">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente ut reprehenderit magnam dignissimos minima quos distinctio tempora quam! Placeat dignissimos provident alias maiores numquam quisquam accusantium velit odit perferendis voluptas.</div>
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">First</th>
+                    <th scope="col">Last</th>
+                    <th scope="col">Handle</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td>@mdo</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td>Jacob</td>
+                    <td>Thornton</td>
+                    <td>@fat</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">3</th>
+                    <td colspan="2">Larry the Bird</td>
+                    <td>@twitter</td>
+                  </tr>
+                </tbody>
+              </table>
+
+            </div>
+
+        <!-- ACCOTDION -->
+        <nav class="navbar bg-light mt-3">
+          <div class="container-fluid mt-">
+            <a class="navbar-brand">F.A.Q.</a>
+          </div>
+        </nav>
+            <div>
+              <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                      Accordion Item #1
+                    </button>
+                  </h2>
+                  <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                      Accordion Item #2
+                    </button>
+                  </h2>
+                  <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                      Accordion Item #3
+                    </button>
+                  </h2>
+                  <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-lg-4 right-part">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente ut reprehenderit magnam dignissimos minima quos distinctio tempora quam! Placeat dignissimos provident alias maiores numquam quisquam accusantium velit odit perferendis voluptas.</div>
 
         </div>
 

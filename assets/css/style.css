@@ -3,7 +3,7 @@ nav{
 }
 
 main{
-    background-color: red;
+    /* background-color: red; */
     height: calc(100vh - 70px);
 }
 
@@ -14,14 +14,14 @@ main{
 }
 
 .main-part{
-    background-color: green;
+    /* background-color: green; */
     overflow: auto;
     height: calc(100vh - 70px);
 } 
 
-.left-part{
+/* .left-part{
     background-color: blueviolet;
-}
+} */
 
 .right-part{
     background-color: lightcoral;
