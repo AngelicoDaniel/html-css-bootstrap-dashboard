@@ -19,3 +19,11 @@ main{
     overflow: auto;
     height: calc(100vh - 100px);
 } 
+
+.left-part{
+    background-color: blueviolet;
+}
+
+.right-part{
+    background-color: lightcoral;
+}
