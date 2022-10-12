@@ -1,0 +1,21 @@
+header{
+    background-color: blue;
+    height: 100px;
+    
+}
+
+main{
+    background-color: red;
+    height: calc(100vh - 100px);
+}
+
+.side-bar{
+    background-color: yellow;
+    height: calc(100vh - 100px);
+}
+
+.main-part{
+    background-color: green;
+    overflow: auto;
+    height: calc(100vh - 100px);
+} 
