@@ -24,7 +24,7 @@ main{
 } */
 
 .right-part{
-    background-color: lightcoral;
+    
     margin: 0;
 }
 
@@ -58,3 +58,18 @@ th img{
     padding: 2px;
 }
 
+.todo{
+    width: 400px;
+    margin: 3px auto;
+   
+    height: auto;
+    padding: 20px;
+}
+
+.card{
+    width: auto;
+    margin: 3px auto;
+    
+    height: auto;
+    padding: 20px;
+}
