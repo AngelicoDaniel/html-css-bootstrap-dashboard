@@ -49,8 +49,12 @@ main{
 
 /* main */
 
-.btn{
+.btn-top{
     background-color: #063a83;
 }
 
+th img{
+    width: 20px;
+    padding: 2px;
+}
 
