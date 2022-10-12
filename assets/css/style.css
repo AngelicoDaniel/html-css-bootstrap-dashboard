@@ -41,3 +41,8 @@ main{
     left: -150px;
 }
 
+.logo-mobile img{
+    width: 30px;
+    height: 30px;
+}
+
