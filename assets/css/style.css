@@ -8,8 +8,10 @@ main{
 }
 
 .side-bar{
-    background-image: url('/assets/img/sidebar-bg.png');
+    background-image: url('./assets/img/sidebar-bg.png');
     background-color: #1A2A41;
+    background-repeat: no-repeat;
+    background-size: cover;
     height: calc(100vh - 70px);
 }
 
@@ -58,18 +60,15 @@ th img{
     padding: 2px;
 }
 
-.todo{
-    width: 400px;
-    margin: 3px auto;
-   
-    height: auto;
-    padding: 20px;
+.card img{
+    width: 100%;
+    margin: auto;
 }
 
-.card{
-    width: auto;
-    margin: 3px auto;
-    
-    height: auto;
-    padding: 20px;
+@media screen and (min-width: 992){
+    .offcanvas.offcanvas-end {
+        width: 100%;
+    }
 }
+
+

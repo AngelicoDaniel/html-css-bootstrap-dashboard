@@ -15,11 +15,12 @@
           <div class="d-none d-lg-block">
           <img src="assets/img/logo.svg" alt="logo">
           </div>
-          <div class="logo-mobile d-lg-none">
-            <img src="assets/img/mobile-logo.png" alt="">
-          </div>
+         
 
             <form class="d-flex flex-grow-1 mx-2" role="search">
+              <div class="logo-mobile d-lg-none">
+                <img src="assets/img/mobile-logo.png" alt="">
+              </div>
               <input class="form-control me-2" type="search" placeholder="&#x1F50E; Prova a cercare Lezioni di Laravel" aria-label="Search">
 
             <ul class="d-flex list-unstyled m-auto">
@@ -48,7 +49,7 @@
 
     </header>
 
-    <main class="container-fluid">
+    <main class="container-fluid m-0">
       <div class="row">
 
         <!-- SIDEBAR -->
@@ -68,9 +69,9 @@
 
         </section>
 
-        <section class="container-fluid main-part col-10 m-auto">
+        <section class="container-fluid main-part col-11 col-lg-10 m-0 p-0">
 
-          <div class="row">
+          <div class="row m-0 p-0">
     <!-- top-part -->
           <div class="container-fluid bg-primary text-white row p-2 m-0">
             <div class="col-12 col-md-8">
@@ -98,7 +99,7 @@
     <!-- left-part -->
           <div class="col-12 col-lg-8 left-part ">
         <!-- TABELLA -->
-            <div>
+            <div class="container-fluid">
               <nav class="navbar bg-light mt-3">
                 <div class="container-fluid mt-">
                   <a class="navbar-brand">Prossime classi</a>
@@ -240,9 +241,9 @@
           </div>
 
           <!-- RIGHT-PART -->
-          <div class="col-12 col-lg-4 right-part">
+          <div class="container-fluid col-12 col-lg-4 right-part">
             <!-- todo -->
-           <div class="container todo">
+           <div class="container card m-auto my-4">
               <nav class="navbar bg-light mt-3">
                 <div class="container-fluid mt-">
                   <a class="navbar-brand">Todo</a>
@@ -252,17 +253,17 @@
                 <div class="input-group-text">
                   <input class="form-check-input mt-0" type="checkbox" value="" aria-label="Checkbox for following text input">
                 </div>
-                <input type="text" class="form-control" aria-label="Text input with checkbox">
+                <input type="text" placeholder="Kickoff nuove classi" class="form-control" aria-label="Text input with checkbox">
                 <div class="input-group mb-0">
                   <div class="input-group-text">
                     <input class="form-check-input mt-0" type="checkbox" value="" aria-label="Checkbox for following text input">
                   </div>
-                  <input type="text" class="form-control" aria-label="Text input with checkbox">
+                  <input type="text" placeholder="Lezione su Bootstrap 5 in classe #75" class="form-control" aria-label="Text input with checkbox">
                   <div class="input-group mb-3">
                     <div class="input-group-text">
                       <input class="form-check-input mt-0" type="checkbox" value="" aria-label="Checkbox for following text input">
                     </div>
-                    <input type="text" class="form-control" aria-label="Text input with checkbox">
+                    <input type="text" placeholder="Controllare username github studenti" class="form-control" aria-label="Text input with checkbox">
                    </div>
                 </div>
              </div>  
@@ -271,9 +272,9 @@
               
 
             <!-- card -->
-            <div class="container card">
+            <div class="container card m-auto my-4 p-2">
 
-              <div class="card" style="width: 25rem;">
+              <div class="card m-auto" style="width: 28rem;">
                 <img src="assets/img/chart.jpg" class="card-img-top" >
                 <div class="card-body">
                   <h5 class="card-title">Utenti attivi</h5>
