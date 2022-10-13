@@ -79,7 +79,7 @@
               <div>
                 <button type="button" class="btn-top btn-primary badge badge-pill">3 pp</button>
                 > 
-                <button type="button" class="btn rounded-circle btn-primary badge badge-pill d-lg-none">+</button>
+                <button type="button" class="btn rounded-circle btn-outline-primary badge badge-pill d-lg-none">+</button>
 
                 <div class="d-none d-lg-inline-block">
                 <button type="button" class="btn-top btn-primary badge badge-pill">Boolean mobile app</button>
@@ -101,17 +101,59 @@
         <!-- TABELLA -->
             <div class="container-fluid">
               <nav class="navbar bg-light mt-3">
-                <div class="container-fluid mt-">
+                <div class="container-fluid">
                   <a class="navbar-brand">Prossime classi</a>
-                  <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">+</button>
-      
-                  <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                  <button class="btn btn-outline-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">+</button>
+                 <!-- offcanvas -->
+                  <div class="offcanvas offcanvas-end w-50" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
                     <div class="offcanvas-header">
-                      <h5 class="offcanvas-title" id="offcanvasRightLabel">Offcanvas right</h5>
+                      <h5 class="offcanvas-title" id="offcanvasRightLabel">Form</h5>
                       <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                     </div>
-                    <div class="offcanvas-body">
-                      ...
+                    <div class="offcanvas-body">                 
+                      <nav class="navbar navbar-light">
+                        <form class="row">
+                          <div class="input-group col-6">
+                            <span class="input-group-text" id="addon-wrapping">@</span>
+                            <input type="text" class="form-control" placeholder="E-mail" aria-label="Username" aria-describedby="addon-wrapping">
+                          </div>
+
+                          <div class="col-6">
+                            <label for="inputPassword4" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="inputPassword4">
+                          </div>
+
+                          <div class="col-12">
+                            <label for="inputAddress" class="form-label">Indirizzo</label>
+                            <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                          </div>
+
+                          <div class="col-6">
+                            <label for="inputCity" class="form-label">Città</label>
+                            <input type="text" class="form-control" id="inputCity">
+                          </div>
+
+                          <div class="col-4">
+                            <label for="inputState" class="form-label">Stato</label>
+                            <select id="inputState" class="form-select">
+                              <option selected>Scegli</option>
+                              <option>...</option>
+                            </select>
+                          </div>
+
+                          <div class="col-2">
+                            <label for="inputZip" class="form-label">Cap</label>
+                            <input type="text" class="form-control" id="inputZip">
+                          </div>
+
+                       
+                            
+                           
+                        
+                       
+                     
+                        </form>
+                      </nav>
                     </div>
                   </div>
                 </div>
